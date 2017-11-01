@@ -1,0 +1,34 @@
+<h2>Listing scores</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Student</th>
+      <th>Subject</th>
+      <th>Point</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for score <- @scores do %>
+    <tr>
+      <td><%= score.date %></td>
+      <td><%= score.student.name %></td>
+      <td><%= score.subject.name %></td>
+      <td><%= score.point %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: score_path(@conn, :show, score), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: score_path(@conn, :edit, score), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: score_path(@conn, :delete, score), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New score", to: score_path(@conn, :new) %></span>
+ | <%= link "Student", to: student_path(@conn, :index) %>
+ | <%= link "Subject", to: subject_path(@conn, :index) %>

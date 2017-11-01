@@ -1,0 +1,18 @@
+<h2>Show student</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @student.name %>
+  </li>
+
+  <li>
+    <strong>Grade:</strong>
+    <%= @student.grade %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: student_path(@conn, :edit, @student) %></span>
+<span><%= link "Back", to: student_path(@conn, :index) %></span>

@@ -1,0 +1,28 @@
+<h2>Show score</h2>
+
+<ul>
+
+  <li>
+    <strong>Date:</strong>
+    <%= @score.date %>
+  </li>
+
+  <li>
+    <strong>Student:</strong>
+    <%= @score.student.name %>
+  </li>
+
+  <li>
+    <strong>Subject:</strong>
+    <%= @score.subject.name %>
+  </li>
+
+  <li>
+    <strong>Point:</strong>
+    <%= @score.point %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: score_path(@conn, :edit, @score) %></span>
+<span><%= link "Back", to: score_path(@conn, :index) %></span>
