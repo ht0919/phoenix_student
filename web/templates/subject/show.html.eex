@@ -1,18 +1,18 @@
-<h2>Show subject</h2>
+<h2>詳細</h2>
 
 <ul>
 
   <li>
-    <strong>Name:</strong>
+    <strong>科目名:</strong>
     <%= @subject.name %>
   </li>
 
   <li>
-    <strong>Teacher:</strong>
+    <strong>担当講師:</strong>
     <%= @subject.teacher %>
   </li>
 
 </ul>
 
-<span><%= link "Edit", to: subject_path(@conn, :edit, @subject) %></span>
-<span><%= link "Back", to: subject_path(@conn, :index) %></span>
+<span><%= link "編集", to: subject_path(@conn, :edit, @subject) %></span>
+<span><%= link "戻る", to: subject_path(@conn, :index) %></span>

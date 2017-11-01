@@ -1,6 +1,6 @@
-<h2>New subject</h2>
+<h2>新規登録</h2>
 
 <%= render "form.html", changeset: @changeset,
                         action: subject_path(@conn, :create) %>
 
-<span><%= link "Back", to: subject_path(@conn, :index) %></span>
+<span><%= link "戻る", to: subject_path(@conn, :index) %></span>

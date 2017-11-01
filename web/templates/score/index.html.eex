@@ -1,12 +1,12 @@
-<h2>Listing scores</h2>
+<h2>成績一覧</h2>
 
 <table class="table">
   <thead>
     <tr>
-      <th>Date</th>
-      <th>Student</th>
-      <th>Subject</th>
-      <th>Point</th>
+      <th>試験日</th>
+      <th>学生氏名</th>
+      <th>受験科目</th>
+      <th>点数</th>
 
       <th></th>
     </tr>
@@ -20,15 +20,15 @@
       <td><%= score.point %></td>
 
       <td class="text-right">
-        <span><%= link "Show", to: score_path(@conn, :show, score), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Edit", to: score_path(@conn, :edit, score), class: "btn btn-default btn-xs" %></span>
-        <span><%= link "Delete", to: score_path(@conn, :delete, score), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+        <span><%= link "詳細", to: score_path(@conn, :show, score), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "編集", to: score_path(@conn, :edit, score), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "削除", to: score_path(@conn, :delete, score), method: :delete, data: [confirm: "削除しますか？"], class: "btn btn-danger btn-xs" %></span>
       </td>
     </tr>
 <% end %>
   </tbody>
 </table>
 
-<span><%= link "New score", to: score_path(@conn, :new) %></span>
- | <%= link "Student", to: student_path(@conn, :index) %>
- | <%= link "Subject", to: subject_path(@conn, :index) %>
+<span><%= link "新規登録", to: score_path(@conn, :new) %></span>
+ | <%= link "学生管理", to: student_path(@conn, :index) %>
+ | <%= link "科目管理", to: subject_path(@conn, :index) %>

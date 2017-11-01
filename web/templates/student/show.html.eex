@@ -1,18 +1,18 @@
-<h2>Show student</h2>
+<h2>詳細</h2>
 
 <ul>
 
   <li>
-    <strong>Name:</strong>
+    <strong>氏名:</strong>
     <%= @student.name %>
   </li>
 
   <li>
-    <strong>Grade:</strong>
+    <strong>学年:</strong>
     <%= @student.grade %>
   </li>
 
 </ul>
 
-<span><%= link "Edit", to: student_path(@conn, :edit, @student) %></span>
-<span><%= link "Back", to: student_path(@conn, :index) %></span>
+<span><%= link "編集", to: student_path(@conn, :edit, @student) %></span>
+<span><%= link "戻る", to: student_path(@conn, :index) %></span>
