@@ -30,8 +30,8 @@
 
 - git clone https://github.com/ht0919/phoenix_student
 - cd phoenix_student
-- npm install
 - mix deps.get
+- npm install
 - mix ecto.create
 - mix ecto.migrate
 - mix phoenix.server
