@@ -1,4 +1,4 @@
-# Elixir+PhoenixによるWebアプリの作例(3)
+# Elixir+PhoenixによるWebアプリの作例(4)
 
 - 2017年10月27日の福岡Elixir会で、もくもく会の題材として作成したWebアプリです。
 - 当日は時間内に完成に至らず悔しい思いをしたので、後日リベンジとして作り込んでみました。
@@ -30,6 +30,7 @@
 
 - git clone https://github.com/ht0919/phoenix_student
 - cd phoenix_student
+- npm install
 - mix deps.get
 - mix ecto.create
 - mix ecto.migrate
