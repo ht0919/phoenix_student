@@ -6,13 +6,15 @@
   <% end %>
 
   <div class="form-group">
-    <%= label f, :科目名, class: "control-label" %>
+    <label>科目名</label>
+    <%# label f, :科目名, class: "control-label" %>
     <%= text_input f, :name, class: "form-control" %>
     <%= error_tag f, :name %>
   </div>
 
   <div class="form-group">
-    <%= label f, :担当講師, class: "control-label" %>
+    <label>担当講師</label>
+    <%# label f, :担当講師, class: "control-label" %>
     <%= text_input f, :teacher, class: "form-control" %>
     <%= error_tag f, :teacher %>
   </div>

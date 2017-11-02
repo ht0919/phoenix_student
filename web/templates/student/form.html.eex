@@ -6,13 +6,15 @@
   <% end %>
 
   <div class="form-group">
-    <%= label f, :氏名, class: "control-label" %>
+    <label>氏名</label>
+    <%# label f, :氏名, class: "control-label" %>
     <%= text_input f, :name, class: "form-control" %>
     <%= error_tag f, :name %>
   </div>
 
   <div class="form-group">
-    <%= label f, :学年, class: "control-label" %>
+    <label>学年</label>
+    <%# label f, :学年, class: "control-label" %>
     <%= number_input f, :grade, class: "form-control" %>
     <%= error_tag f, :grade %>
   </div>

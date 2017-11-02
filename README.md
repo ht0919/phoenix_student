@@ -30,6 +30,9 @@
 
 - git clone https://github.com/ht0919/phoenix_student
 - cd phoenix_student
+- mix deps.get
+- mix ecto.create
+- mix ecto.migrate
 - mix phoenix.server
 
 
