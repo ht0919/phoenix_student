@@ -28,7 +28,7 @@
 
 ## 起動方法
 
-- git clone https://github.com/ht0919/phoenix_student
+- git clone https://github.com/ht0919/phoenix_student.git
 - cd phoenix_student
 - mix deps.get
 - npm install
