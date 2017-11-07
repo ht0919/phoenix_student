@@ -1,3 +1,3 @@
 defmodule Student.Repo do
-  use Ecto.Repo, otp_app: :student, adapter: PostgreSQL.Ecto
+  use Ecto.Repo, otp_app: :student
 end
