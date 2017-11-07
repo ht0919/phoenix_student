@@ -13,7 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :student, Student.Endpoint,
   load_from_system_env: true,
-  url: [scheme: "https", host: "evening-chamber-40802.herokuapp.com", port: 443],
+  url: [scheme: "https", host: "murmuring-sierra-10915.herokuapp.com", port: 443],
   #http: [:inet6, port: {:system, "PORT"}],
   #url: [host: "example.com", port: 80],
   #cache_static_manifest: "priv/static/cache_manifest.json"
